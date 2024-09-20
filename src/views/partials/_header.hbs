@@ -1,0 +1,305 @@
+<style>
+    .swal2-container {
+        z-index: 10010 !important;
+    }
+</style>
+
+<nav class="navbar navbar-dark bg-dark sticky-top mb-5" style="z-index: 10111;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span class="fs-2">Real Estate</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                    Real Estate
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 p-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="window.location.href='http://127.0.0.1:8080/homes';"
+                            data-bs-dismiss="offcanvas">
+                            <i class="bi bi-houses fs-3"></i><span class="fs-4 ms-2">Homes</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="create_new_home" data-bs-dismiss="offcanvas"><i
+                                class="bi bi-house-add fs-3"></i><span class="fs-4 ms-2">Add Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="my-homes" data-bs-dismiss="offcanvas"><i
+                                class="bi bi-house-gear fs-3"></i><span class="fs-4 ms-2">My Homes</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#updateUserModal" id="settings-user"
+                            href="#" data-bs-dismiss="offcanvas"><i class="bi bi-gear fs-3"></i><span
+                                class="fs-4 ms-2">Settings</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="window.location.href='http://127.0.0.1:8080/support';"
+                            data-bs-dismiss="offcanvas"><i class="bi bi-person-raised-hand fs-3"></i><span
+                                class="fs-4 ms-2">Support</span></a>
+                    </li>
+
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="#" id="log-out" onclick="logOutFunction()"
+                     data-bs-dismiss="offcanvas"><i
+                            class="bi bi-box-arrow-right fs-3"></i><span class="fs-4 ms-2" id="logout-span">Log
+                            out</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdawn-filter"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-sliders fs-3"></i><span class="fs-4 ms-2">Filter</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-dismiss="offcanvas"><i
+                                        class="bi bi-sort-up fs-4"></i><span class="ms-1 fs-5">Price increase</span></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-dismiss="offcanvas"><i
+                                        class="bi bi-sort-down fs-4"></i><span class="ms-1 fs-5">Price
+                                        reduction</span></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://127.0.0.1:8080/api/homes/?sort=createdAt"
+                                    onclick="window.location.href='http://127.0.0.1:8080/homes/?sort=createdAt';"
+                                    data-bs-dismiss="offcanvas"><i class="bi bi-alarm-fill fs-4"></i><span
+                                        class="ms-1 fs-5">Based on time</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-success disabled" type="submit" id="serch-container"
+                        data-bs-dismiss="offcanvas">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+
+
+
+    const createNewHomeBtn = document.getElementById("create_new_home");
+    const settingsBtn = document.getElementById("settings-user")
+    const myHomesBtn = document.getElementById("my-homes")
+
+    createNewHomeBtn.addEventListener("click", async function (e) {
+        try {
+            if (!checkToken()) {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "User not logged in",
+                    confirmButtonText: "Login"
+                }).then(() => {
+                    window.location.href = "http://127.0.0.1:8080/login";
+                });
+            } else {
+                const response = await fetch("http://127.0.0.1:8080/create-home");
+
+                if (response.ok) {
+                    window.location.href = "http://127.0.0.1:8080/create-home"
+                } else if (response.status = 400) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "User token timed out",
+                        confirmButtonText: "Login"
+                    }).then(() => {
+                        window.location.href = "http://127.0.0.1:8080/login";
+                    });
+                }
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Internal server eroror"
+            });
+        }
+    });
+
+
+
+
+
+    settingsBtn.addEventListener("click", async function (e) {
+        try {
+            if (!checkToken()) {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "User not logged in",
+                    confirmButtonText: "Login"
+                }).then(() => {
+                    window.location.href = "http://127.0.0.1:8080/login";
+                });
+            } else {
+                const response = await fetch(`http://127.0.0.1:8080/settings`);
+
+                if (response.ok) {
+                    window.location.href = `http://127.0.0.1:8080/settings`
+                } else if (response.status = 400) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "User token timed out",
+                        confirmButtonText: "Login"
+                    }).then(() => {
+                        window.location.href = "http://127.0.0.1:8080/login";
+                    });
+                }
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Internal server eroror"
+            });
+        }
+    });
+
+
+
+    myHomesBtn.addEventListener("click", async function (e) {
+        try {
+            if (!checkToken()) {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "User not logged in",
+                    confirmButtonText: "Login"
+                }).then(() => {
+                    window.location.href = "http://127.0.0.1:8080/login";
+                });
+            } else {
+                const response = await fetch(`http://127.0.0.1:8080/my-homes/${localStorage.getItem("userId")}`);
+
+                if (response.ok) {
+                    window.location.href = `http://127.0.0.1:8080/my-homes/${localStorage.getItem("userId")}`
+                } else if (response.status = 400) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "User token timed out",
+                        confirmButtonText: "Login"
+                    }).then(() => {
+                        window.location.href = "http://127.0.0.1:8080/login";
+                    });
+                }
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Internal server eroror"
+            });
+        }
+    });
+
+
+    const checkToken = async () => {
+        if (localStorage.getItem("jwtToken") && localStorage.getItem("refreshToken")) {
+            const currentTime = new Date().getTime()
+            if (refreshTokenExpired()) {
+                return false
+            } else {
+                if (accessTokenExpired()) {
+                    const response = await fetch("http://127.0.0.1:8080/auth/refresh-token",{
+                        method: "POST",
+                    });
+                    const data = await response.json()
+                    if(data.token){
+                        localStorage.setItem("jwtToken",data.token)
+                        localStorage.setItem("refreshToken", data.refreshToken)
+                        return true;
+                    }
+                }
+            }
+        } else {
+            return false;
+        }
+    };
+
+    const accessTokenExpired = () => {
+        const currentTime = new Date().getTime();
+        const loginTime = localStorage.getItem("loginTime");
+        const timeDifferense = currentTime - loginTime
+        const accseTokenTime = 24 * 60 * 60 * 1000
+        if (timeDifferense > accseTokenTime) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    const refreshTokenExpired = () => {
+        const currentTime = new Date().getTime();
+        const loginTime = localStorage.getItem("loginTime");
+        const timeDifferense = currentTime - loginTime   //30 day
+        const refreshTokenTime = 24 * 30 * 60 * 60 * 1000; // 30day
+        if (timeDifferense > refreshTokenTime) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+const logOutFunction = async () => {
+    console.log("hi")
+    try {
+        const response = await fetch("http://127.0.0.1:8080/api/v1/auth/logout", {
+            method: "POST",
+        });
+
+        if (response.ok) {
+            localStorage.removeItem("loginTime");
+            localStorage.removeItem("refreshToken");
+            localStorage.removeItem("userRole");
+            localStorage.removeItem("userId");
+            localStorage.removeItem("jwtToken");
+            window.location.href = "http://127.0.0.1:8080/login"
+        } else {
+            Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Log Out error"
+            });
+        }
+    } catch (error) {
+        Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Internal server eroror"
+            });
+    }
+};
+
+
+
+
+
+
+
+
+
+</script>

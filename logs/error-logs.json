@@ -1,0 +1,1400 @@
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +99912108987 is arledy exists. Try another one!, status: 400; Time: Thu Aug 29 2024 22:02:06 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +99912108987 is arledy exists. Try another one!, status: 400; Time: Thu Aug 29 2024 22:02:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +9989991210416 is arledy exists. Try another one!, status: 400; Time: Fri Aug 30 2024 22:19:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {66d0a76c5d54ecc529c8ae1} id you provided is wrong, status: 400; Time: Mon Sep 02 2024 19:19:51 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for savbatov04@gmail.com is arledy exists. Try another one!, status: 400; Time: Tue Sep 03 2024 19:10:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for savbatov04@gmail.com is arledy exists. Try another one!, status: 400; Time: Tue Sep 03 2024 19:17:20 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email], status: 404; Time: Tue Sep 03 2024 19:25:27 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 19:25:45 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for savbatov04@gmail.com is arledy exists. Try another one!, status: 400; Time: Tue Sep 03 2024 19:33:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Tue Sep 03 2024 19:33:51 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Conflict Exception): message: User don't have access to url: /delete/66d0a76c5d54ecc529c8ae10 with method: DELETE, status: 409; Time: Tue Sep 03 2024 19:34:52 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:13:40 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:13:45 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:17:05 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:17:15 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:18:10 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:18:21 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:18:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:18:57 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:19:26 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:20:40 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:20:54 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:20:56 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:12 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:23 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:24 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:30 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:51 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:55 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:57 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:58 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:22:59 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:23:00 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:23:02 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:41:07 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:41:58 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:42:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 20:42:41 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 21:01:21 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 21:02:06 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 21:02:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 21:03:10 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Tue Sep 03 2024 21:05:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Tue Sep 03 2024 21:06:17 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Tue Sep 03 2024 21:10:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Tue Sep 03 2024 21:12:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Tue Sep 03 2024 21:12:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Tue Sep 03 2024 21:17:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 03 2024 21:17:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Tue Sep 03 2024 21:22:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Wed Sep 04 2024 13:55:39 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Wed Sep 04 2024 13:56:29 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Wed Sep 04 2024 13:56:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +99912108987 is arledy exists. Try another one!, status: 400; Time: Wed Sep 04 2024 14:08:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:29:58 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:30:00 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:30:02 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:30:03 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:30:06 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:30:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:30:09 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 17:30:10 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 19:14:59 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 19:15:11 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Thu Sep 05 2024 19:15:17 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +99912108987 is arledy exists. Try another one!, status: 400; Time: Thu Sep 05 2024 21:27:04 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +99912108987 is arledy exists. Try another one!, status: 400; Time: Thu Sep 05 2024 21:41:13 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +99912108987 is arledy exists. Try another one!, status: 400; Time: Fri Sep 06 2024 13:26:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +999121089877 is arledy exists. Try another one!, status: 400; Time: Fri Sep 06 2024 13:30:07 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +99912108 is arledy exists. Try another one!, status: 400; Time: Fri Sep 06 2024 13:54:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:44:41 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +9991210845 is arledy exists. Try another one!, status: 400; Time: Fri Sep 06 2024 17:46:10 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:47 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:47 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:47 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:52 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:52 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:46:54 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:26 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:26 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:27 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:27 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:27 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:27 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:27 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:28 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:28 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:47:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:50:26 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:50:28 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:50:28 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:50:28 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +9991210845545 is arledy exists. Try another one!, status: 400; Time: Fri Sep 06 2024 17:53:23 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:53:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {create} id you provided is wrong, status: 400; Time: Fri Sep 06 2024 17:54:55 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +998991210416 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:25:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +998991210416 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:25:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +998991210416 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:27:59 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +998995568686 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:31:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +9991210845545454 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:32:28 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +9991210845545454 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:32:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +9991210845545454 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:32:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +9991210845545454 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:34:22 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value sellerPhoneNumber for +999121084554545455445 is arledy exists. Try another one!, status: 400; Time: Sat Sep 07 2024 20:35:21 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sat Sep 07 2024 22:30:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 01:16:54 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:14:03 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:16:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:16:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:16:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:16:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:16:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:13 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:39 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:41 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:43 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:17:45 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 02:18:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 12:54:44 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:00:19 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:00:20 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:04:13 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:05:22 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:07:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:10:20 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:10:25 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:12:09 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:12:19 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:14:18 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Your token: undefined not work, status: 400; Time: Sun Sep 08 2024 13:14:19 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Invalid JWT token, status: 400; Time: Sun Sep 08 2024 13:27:18 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Invalid JWT token, status: 400; Time: Sun Sep 08 2024 13:27:54 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:29:20 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:33:41 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:42:43 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:43:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:52:57 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:53:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:13 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:39 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:39 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:39 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:57:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:29 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:30 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:30 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:30 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:58:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 13:59:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:00:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:43 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:01:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:02:04 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:02:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:02:29 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:02:29 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:02:29 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:02:30 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:02:59 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:00 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:00 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:00 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:09 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:09 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:09 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:13 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:14 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:14 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:14 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:14 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:14 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:15 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:15 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:15 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:15 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:15 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:17 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:17 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 14:03:37 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:33 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:36 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:37 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:37 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:37 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:45 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:04:47 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 15:05:03 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: This is object id not supported, status: 400; Time: Sun Sep 08 2024 15:17:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 15:19:09 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 15:19:17 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 15:19:22 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 15:19:35 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 15:19:44 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 15:20:03 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 15:20:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 16:12:03 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 16:12:06 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 16:12:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 08 2024 16:12:11 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 17:40:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 17:40:39 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Token Expired Exception): message: Token already expired, status: 499; Time: Sun Sep 08 2024 18:53:43 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Conflict Exception): message: User don't have access to url: /delete/66ddb4fdc70616f6bb90a497 with method: DELETE, status: 409; Time: Sun Sep 08 2024 19:30:27 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:15:44 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:15:54 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:16:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:16:04 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:16:06 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for diloromturdiyeva90@gmail.com is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:17:53 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for diloromturdiyeva90@gmail.com is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:20:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for diloromturdiyeva90@gmail.com is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:21:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:21:42 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:21:45 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:21:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210415 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:21:59 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:23:29 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:25:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:27:47 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:28:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:42:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Sun Sep 08 2024 20:42:04 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 20:50:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 20:51:04 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 20:53:22 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 20:54:24 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 20:54:28 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 20:55:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 20:56:52 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 08 2024 21:01:00 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Mon Sep 09 2024 14:10:25 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998994258311 is arledy exists. Try another one!, status: 400; Time: Mon Sep 09 2024 14:10:45 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Mon Sep 09 2024 14:16:14 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Mon Sep 09 2024 16:54:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Mon Sep 09 2024 16:54:52 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Mon Sep 09 2024 22:19:58 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Mon Sep 09 2024 22:20:52 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Mon Sep 09 2024 22:23:19 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Mon Sep 09 2024 22:24:45 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Mon Sep 09 2024 22:25:26 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Mon Sep 09 2024 22:31:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Mon Sep 09 2024 23:53:48 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Tue Sep 10 2024 00:04:04 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Tue Sep 10 2024 00:04:25 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Tue Sep 10 2024 00:06:11 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Tue Sep 10 2024 00:14:43 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Tue Sep 10 2024 00:18:20 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Tue Sep 10 2024 00:19:07 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: User not found, status: 404; Time: Tue Sep 10 2024 00:32:41 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Tue Sep 10 2024 22:59:04 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Wed Sep 11 2024 15:34:55 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Wed Sep 11 2024 17:43:32 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Wed Sep 11 2024 18:04:18 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Wed Sep 11 2024 18:04:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Wed Sep 11 2024 18:05:26 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Wed Sep 11 2024 18:40:20 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for savbatov0406@gmail.com is arledy exists. Try another one!, status: 400; Time: Thu Sep 12 2024 14:11:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Thu Sep 12 2024 14:11:41 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210416 is arledy exists. Try another one!, status: 400; Time: Thu Sep 12 2024 14:23:05 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Thu Sep 12 2024 14:27:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {undefined} id you provided is wrong, status: 400; Time: Sun Sep 15 2024 14:13:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 15 2024 14:45:10 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 15 2024 16:30:49 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 15 2024 16:41:31 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Sun Sep 15 2024 16:42:43 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Sun Sep 15 2024 17:26:10 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Mon Sep 16 2024 14:00:50 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Mon Sep 16 2024 14:12:06 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Mon Sep 16 2024 14:12:14 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value email for savbatov0407@gmail.com is arledy exists. Try another one!, status: 400; Time: Mon Sep 16 2024 14:13:07 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Database Validation error): message: Given value phone for 998991210417 is arledy exists. Try another one!, status: 400; Time: Mon Sep 16 2024 14:13:16 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 17 2024 20:41:52 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 17 2024 20:42:06 GMT+0500 (Узбекистан, стандартное время)"
+}

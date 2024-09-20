@@ -1,0 +1,66 @@
+import Joi from "joi";
+
+export const homeCreateValidation = Joi.object({
+  userId: Joi.string().required(),
+  area: Joi.number().required(),
+  price: Joi.number().required(),
+  address: Joi.string().required(),
+  isBoys: Joi.boolean().required(),
+  roomsCount: Joi.number().required(),
+  bathRoomsCount: Joi.number().required(),
+  status: Joi.string().valid("onSale", "soldOut", "rejected"),
+  isWifi: Joi.boolean().required(),
+  additionalInformation: Joi.string().required(),
+  sellerPhoneNumber: Joi.string().required(),
+  isConditioner: Joi.boolean().required(),
+  isOwnerHouse: Joi.boolean().required(),
+  city: Joi.string().valid(
+    "tashkent",
+    "samarkand",
+    "bukhara",
+    "khiva",
+    "andijan",
+    "fergana",
+    "namangan",
+    "nukus",
+    "urgench",
+    "qarshi",
+    "jizzakh",
+    "gulistan",
+    "kokand"
+  ).required(),
+  homeImage: Joi.string(),
+});
+
+
+export const homeUpdateValidation = Joi.object({
+  userId: Joi.string().required(),
+  area: Joi.number(),
+  price: Joi.number(),
+  address: Joi.string(),
+  isBoys: Joi.boolean(),
+  roomsCount: Joi.number(),
+  bathRoomsCount: Joi.number(),
+  status: Joi.string().valid("onSale", "soldOut", "rejected"),
+  isWifi: Joi.boolean(),
+  additionalInformation: Joi.string(),
+  sellerPhoneNumber: Joi.string(),
+  isConditioner: Joi.boolean(),
+  isOwnerHouse: Joi.boolean(),
+  city: Joi.string().valid(
+    "tashkent",
+    "samarkand",
+    "bukhara",
+    "khiva",
+    "andijan",
+    "fergana",
+    "namangan",
+    "nukus",
+    "urgench",
+    "qarshi",
+    "jizzakh",
+    "gulistan",
+    "kokand"
+  ),
+  homeImage: Joi.string(),
+});

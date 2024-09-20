@@ -1,0 +1,205 @@
+<style>
+  /*alert*/
+  .like {
+    position: absolute;
+    height: 40px;
+    right: 10px;
+    top: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+  }
+
+  .unlike {
+    position: absolute;
+    height: 40px;
+    right: 10px;
+    top: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
+
+
+
+  .carousel-item img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+
+
+  .bi-heart {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: #232323;
+    padding: 5px 5px 2px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .bi-heart-fill {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: #232323;
+    padding: 5px 5px 2px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 0;
+    color: red;
+  }
+
+  .card {
+    border: none;
+    border-radius: 10px;
+    background-color: #232323;
+  }
+
+  #city-span {
+    text-transform: capitalize;
+  }
+</style>
+<div class="container homes-container h-75">
+  <div class="row row-gap-4">
+    {{#each home}}
+    <div class="col-md-12 col-sm-12 col-xl-8 col-xxl-7 mx-auto">
+      <div class="card">
+
+        <div id="carousel{{@index}}" class="carousel slide" style="position: relative;">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-heart-fill"></i>
+          <div class="carousel-inner">
+            {{#if homeImage.length}}
+            {{#each homeImage}}
+            <div class="carousel-item {{#if @first}}active{{/if}}">
+              <img src="/uploads/{{this}}" class="d-block w-100" alt="Home Image">
+            </div>
+            {{/each}}
+            {{else}}
+            <div class="carousel-item active">
+              <p class="text-center p-4">Rasmlar topilmadi</p>
+            </div>
+            {{/if}}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{@index}}" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel{{@index}}" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="card-body">
+
+
+          <div class="container d-flex justify-content-between align-items-center">
+            <h5 class="card-title fs-5 d-flex column-gap-1"><i class="bi bi-building fs-4"></i><span
+                id="city-span">{{city}}</span>
+            </h5>
+            <h5 class="card-title fs-5 d-flex column-gap-1"><i
+                class="bi bi-bounding-box-circles fs-4"></i><span>{{area}}m<sup>2</sup> </span></h5>
+          </div>
+
+          <div class="container d-flex justify-content-between align-items-center">
+            <h5 class="card-title fs-5 d-flex column-gap-1"><i class="bi bi-person-fill fs-4"></i><span
+                class="d-flex justify-content-center align-items-center">{{#if
+                isBoys}}Yigitlar{{else}}Qizlar{{/if}}</span></h5>
+            <h5 class="card-title fs-5 d-flex column-gap-3"><i class="bi bi-wifi fs-4"></i><span
+                class="d-flex justify-content-center align-items-center">{{#if isWifi}}Bor{{else}}Yo'q{{/if}}</span>
+            </h5>
+          </div>
+          <div class="container mx-auto d-flex flex-column gap-1 row mt-1">
+            <a href="tel:{{sellerPhoneNumber}}" class="btn btn-primary">Connect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+
+<script>
+  const hearts = document.querySelectorAll(".bi-heart");
+  const filledHearts = document.querySelectorAll(".bi-heart-fill");
+
+
+  hearts.forEach((heart, index) => {
+    const filledHeart = filledHearts[index];
+
+    if (localStorage.getItem("jwtToken")) {
+      heart.addEventListener("click", () => {
+        heart.style.zIndex = "0";
+        filledHeart.style.zIndex = "10000";
+        Swal.fire({
+          text: 'Added to favorites',
+          showConfirmButton: false,
+          timer: 1500,
+          customClass: {
+            popup: 'like',
+          }
+        });
+      });
+
+      filledHeart.addEventListener("click", () => {
+        heart.style.zIndex = "10000";
+        filledHeart.style.zIndex = "0";
+        Swal.fire({
+          text: 'Removed to favorites',
+          showConfirmButton: false,
+          timer: 1500,
+          customClass: {
+            popup: 'unlike',
+          }
+        });
+
+      });
+
+    } else if (!localStorage.getItem("jwtToken")) {
+      heart.addEventListener("click", () => {
+        heart.style.zIndex = "10000";
+        hearts.style.zIndex = "0";
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Your not registired",
+        });
+      });
+
+
+      heart.addEventListener("click", () => {
+        heart.style.zIndex = "10000";
+        filledHeart.style.zIndex = "0";
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Your not registired",
+        });
+
+      });
+    }
+
+  });
+
+
+
+
+</script>

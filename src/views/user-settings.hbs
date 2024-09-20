@@ -1,0 +1,199 @@
+<div class="container w-100 d-flex flex-column align-items-center justify-content-center w-50 row-gap-3 p-5"
+    style="background-color: #232323; border-radius: 30px;">
+    <div class="container d-flex align-items-center justify-content-between m-1 row" id="inner__container">
+        <label for="" class="fs-3 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 ">Password: </label>
+        <button class="btn btn-info col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5" onclick="changePassword()">Change
+            password</button>
+    </div>
+    <div class="container d-flex align-items-center justify-content-between m-1 row" id="inner__container">
+        <label for="" class="fs-3 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">Phone: </label>
+        <button class="btn btn-info col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5" onclick="changePhone()">Change
+            Phone</button>
+    </div>
+
+    <div class="container d-flex align-items-center justify-content-between m-1 row" id="inner__container">
+        <label for="" class="fs-3 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">FIO: </label>
+        <button class="btn btn-info col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5"
+            onclick="handleChangePassword()">Change FIO</button>
+    </div>
+
+    <div class="container d-flex align-items-center justify-content-between m-1 row" id="inner__container">
+        <label for="" class="fs-3 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">Email: </label>
+        <button class="btn btn-info col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5"
+            onclick="handleChangePassword()">Change Email</button>
+    </div>
+
+
+    <div class="container d-flex align-items-center justify-content-between m-1 row" id="inner__container">
+        <label for="" class="fs-3 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">Devices: </label>
+        <button class="btn btn-info col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5" onclick="myActivity()">View</button>
+    </div>
+
+</div>
+
+
+
+<script>
+    const getUserId = () => {
+        return localStorage.getItem("userId")
+    }
+
+    async function changePassword() {
+        const { value: formValues } = await Swal.fire({
+            title: 'Change Password',
+            html:
+                '<input id="new-password" class="swal2-input" placeholder="New Password" type="password">' +
+                '<input id="confirm-new-password" class="swal2-input" placeholder="Confirm New Password" type="password">',
+            focusConfirm: false,
+            showCancelButton: true,
+            confirmButtonText: 'Change Password',
+            cancelButtonText: 'Cancel',
+            preConfirm: () => {
+                const password = document.getElementById('new-password').value;
+                const confirmPassword = document.getElementById('confirm-new-password').value;
+
+
+                if (!password || !confirmPassword) {
+                    Swal.showValidationMessage('Please fill in all fields');
+                    return false;
+                }
+
+                if (password !== confirmPassword) {
+                    Swal.showValidationMessage('New passwords do not match');
+                    return false;
+                }
+
+                return { password };
+            }
+        });
+
+        if (formValues) {
+            const password = {
+                password: formValues.password
+            };
+
+            try {
+                const response = await fetch(`http://127.0.0.1:8080/api/v1/users/update/${getUserId()}`, {
+                    method: "PATCH",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(password)
+                });
+                const data = await response.json()
+                if (response.status === 200) {
+                    Swal.fire({
+                        title: 'Password Changed',
+                        icon: 'success'
+                    });
+                } else if (data.name == "Validation error") {
+                    Swal.fire({
+                        title: 'Password Validation error',
+                        text: `Your password must contain at least 8 characters and numbers`,
+                        icon: 'error'
+                    });
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                Swal.fire({
+                    title: 'Internal server error',
+                    icon: 'error'
+                });
+            }
+        }
+
+    }
+
+
+
+    async function changePhone() {
+        const { value: formValues } = await Swal.fire({
+            title: 'Change Phone',
+            html:
+                '<input id="new-phone" class="swal2-input" placeholder="New Phone Number" type="text">',
+            focusConfirm: false,
+            showCancelButton: true,
+            confirmButtonText: 'Change Phone',
+            cancelButtonText: 'Cancel',
+            preConfirm: () => {
+                const phone = document.getElementById('new-phone').value;
+
+
+                if (!phone) {
+                    Swal.showValidationMessage('Please fill in all fields');
+                    return false;
+                }
+
+                return { phone };
+            }
+        });
+
+        if (formValues) {
+            const phone = {
+                phone: formValues.phone
+            };
+
+            try {
+                const response = await fetch(`http://127.0.0.1:8080/api/v1/users/update/${getUserId()}`, {
+                    method: "PATCH",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(phone)
+                });
+                const data = await response.json()
+                if (response.status === 200) {
+                    Swal.fire({
+                        title: 'Phone Changed',
+                        icon: 'success'
+                    });
+                } else if (data.name == "Validation error") {
+                    Swal.fire({
+                        title: 'Phone Validation error',
+                        text: `Enter a phone number for Uzbekistan                                       
+                               Example: 998991210416`,
+                        icon: 'error'
+                    });
+                } else if (data.name == "Database Validation error") {
+                    Swal.fire({
+                        title: 'Phone update error',
+                        text: `${data.message}`,
+                        icon: 'error'
+                    });
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                Swal.fire({
+                    title: 'Internal server error',
+                    icon: 'error'
+                });
+            }
+        }
+
+    }
+
+
+    async function myActivity() {
+        const response = await fetch(`http://127.0.0.1:8080/api/v1/users/${getUserId()}`);
+        const data = await response.json();
+        const userDevices = data.data.userActivity;
+        let devicesHTML = ''
+
+        userDevices.forEach(device => {
+            devicesHTML += `
+    <p>${device.os} ${device.browser} [<span style = "font-size: 15px;">Date: ${(device.createdAt).split("T")[0]}   Time: ${((device.createdAt).split("T")[1]).split(".")[0]}</span>]</p>
+  `;
+        });
+
+        Swal.fire({
+            title: 'Devices',
+            html: `
+    <div style="height: 200px; width: 100%; overflow-y: auto; background-color: black;">
+      ${devicesHTML}
+    </div>
+  `,
+            confirmButtonText: 'OK'
+        });
+    }
+
+</script>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    color: white;
+}
+
+body{
+    background: #1f1f1f;
+  }
+  #loader-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10101;
+    background-color: #1B1B1B;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .loader {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #008ae6;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.01);
+    animation: animate 1s ease-in-out infinite alternate;
+  }
+  
+  .dot:nth-child(1){
+    animation-delay: -0.25s;
+  }
+  
+  .dot:nth-child(2){
+    background: #e60000;
+    animation-delay: -0.5s;
+  }
+  
+  .dot:nth-child(3){
+    background: #ffcc00;
+    animation-delay: -0.75s;
+  }
+  
+  .dot:nth-child(4){
+    background: #008800;
+    animation-delay: -1s;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }

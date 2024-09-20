@@ -1,0 +1,125 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+#back-btn{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: yellowgreen;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+
+}
+
+#back-btn:hover{
+    transform: scale(0.8);
+}
+body
+{
+  background-color:#fff;
+/*   background: radial-gradient(at 50% -20%, #908392, #0d060e) fixed; */
+}
+
+.container{
+    position: relative;
+}
+
+
+#handboy
+{
+   animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+    
+}
+
+
+#girllight
+{
+   animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl
+{
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+   transform-origin: 60% 0%;
+    transform-box: fill-box;
+  
+}
+
+#zero
+{
+  transform-origin:bottom;
+  transform-box:fill-box;
+  
+}
+
+/*************swing************/
+@keyframes swing {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+
+/*************swing hair************/
+@keyframes swinghair {
+    0% { transform: rotate(6deg); }
+    100% { transform: rotate(-6deg); }
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    {{{body}}}
+</body>
+</html>
+
+
+
+
+<script>
+    anime({
+  targets: '.row svg',
+  translateY: 10,
+  autoplay: true,
+  loop: true,
+  easing: 'easeInOutSine',
+  direction: 'alternate'
+});
+
+anime({
+  targets: '#zero',
+  translateX: 10,
+  autoplay: true,
+  loop: true,
+  easing: 'easeInOutSine',
+  direction: 'alternate',
+  scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+    rotateY: {value: '+=180', delay: 200},
+});
+
+
+
+</script>

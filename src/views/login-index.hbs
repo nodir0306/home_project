@@ -1,0 +1,55 @@
+<section>
+  <div class="container">
+    <div class="user signinBx">
+      <div class="imgBx"><img src="../public/images/home-image.jpg" alt="login image" /></div>
+      <div class="formBx">
+        <form id="loginForm">
+          <h2>Kirish</h2>
+          <input type="text" name="phone" placeholder="Telefon raqami" required />
+          <input type="password" name="password" placeholder="Parol" required />
+          <input type="submit" name="" value="Kirish" />
+          <p class="signup">
+            Reset password ?
+            <a href="#" onclick="resetPassFunc()">Reset</a>
+          </p>
+          <p class="signup">
+          Sign in with otp ?
+          <a href="#" onclick="signWithOtp()">sign in</a>
+          </p>
+          <p class="signup">
+            Sizda hisob yo'qmi ?
+            <a href="#" onclick="toggleForm();">Ro'yxatdan o'tish</a>
+          </p>
+          <p class="signup">
+            Uylarni ko'rishda davom etish ?
+            <a href="/homes">Uylar</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="user signupBx">
+      <div class="formBx" id="registerForm">
+        <form id="registerForm">
+          <h2>Ro'yxatdan o'tish</h2>
+          <input type="text" name="name" placeholder="Ism" required />
+          <input type="text" name="surname" placeholder="Familiya" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="phone_register" placeholder="Telefon raqami" required />
+          <input type="password" name="password_register" placeholder="Parol" required />
+          <input type="password" name="password_repeat" placeholder="Parolni tasdiqlang" required />
+          <input type="submit" name="" value="Ro'yxatdan o'tish" />
+          <p class="signup">
+            Sizda hisob mavjudmi ?
+            <a href="#" onclick="toggleForm();">Kirish</a>
+          </p>
+          <p class="signup">
+            Uylarni ko'rishda davom etish ?
+            <a href="/homes">Uylar</a>
+          </p>
+
+        </form>
+      </div>
+      <div class="imgBx"><img src="../public/images/home-image-2.jpg" alt="" /></div>
+    </div>
+  </div>
+</section>
