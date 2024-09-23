@@ -30,6 +30,8 @@ homeRoutes
   .patch("/update/:id",
     CheckAuthGuard(true),
     CheckRolesGuard("owner","admin","user"), 
-    upload.array("homeImage"), homeController.updateHome);
+    upload.array("homeImage"), homeController.updateHome)
+  .get("/topSelling/:homeId",CheckAuthGuard(true),CheckRolesGuard("owner"),homeController.topSellingHome)
+  .get("/UnTopSelling/:homeId",CheckAuthGuard(true),CheckRolesGuard("owner"),homeController.UnTopSellingHome)
 
 export default homeRoutes;

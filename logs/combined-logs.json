@@ -1398,3 +1398,15 @@
     "level": "error",
     "message": "Exception (Not Found): message: Invalid password or [phone, email, status: 404; Time: Tue Sep 17 2024 20:42:06 GMT+0500 (Узбекистан, стандартное время)"
 }
+{
+    "level": "error",
+    "message": "Exception (Conflict Exception): message: User don't have access to url: /UnTopSelling/66f0046a27ade6047356bd54 with method: POST, status: 409; Time: Sun Sep 22 2024 17:16:02 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Conflict Exception): message: User don't have access to url: /UnTopSelling/66f0046a27ade6047356bd54 with method: GET, status: 409; Time: Sun Sep 22 2024 17:17:17 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Conflict Exception): message: User don't have access to url: /UnTopSelling/66f0046a27ade6047356bd54 with method: GET, status: 409; Time: Sun Sep 22 2024 17:18:52 GMT+0500 (Узбекистан, стандартное время)"
+}

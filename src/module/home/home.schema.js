@@ -84,6 +84,10 @@ const homeSchema = new Schema(
       ref: "User",
       required: true
     },
+    topSellingHome: {
+      type: Boolean,
+      default: false,
+    }
   },
   { versionKey: false, timestamps: true}
 );

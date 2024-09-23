@@ -73,6 +73,99 @@
     text-transform: capitalize;
   }
 </style>
+<div class="container-fluid p-0 d-flex justify-content-center align-items-center">
+  <h1 class="text-white" style="text-align: center;">Top Selling Homes</h1>
+</div>
+
+<div class="container homes-container">
+  <div class="row row-gap-4">
+    {{#each topSellingHomes}}
+    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4 col-xxl-3">
+      <div class="card">
+
+        <div id="carousel{{@index}}" class="carousel slide" style="position: relative;">
+          <i class="bi bi-heart" data-like="{{_id}}"></i>
+          <i class="bi bi-heart-fill"></i>
+          <div class="carousel-inner">
+            {{#if homeImage.length}}
+            {{#each homeImage}}
+            <div class="carousel-item {{#if @first}}active{{/if}}">
+              <img src="/uploads/{{this}}" class="d-block w-100" alt="Home Image">
+            </div>
+            {{/each}}
+            {{else}}
+            <div class="carousel-item active">
+              <p class="text-center p-4">Rasmlar topilmadi</p>
+            </div>
+            {{/if}}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{@index}}" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel{{@index}}" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="card-body">
+
+
+          <div class="container d-flex justify-content-between align-items-center">
+            <h5 class="card-title fs-5 d-flex column-gap-1"><i class="bi bi-building fs-4"></i><span
+                id="city-span">{{city}}</span>
+            </h5>
+            <h5 class="card-title fs-5 d-flex column-gap-1"><i
+                class="bi bi-bounding-box-circles fs-4"></i><span>{{area}}m<sup>2</sup> </span></h5>
+          </div>
+
+          <div class="container d-flex justify-content-between align-items-center">
+            <h5 class="card-title fs-5 d-flex column-gap-1"><i class="bi bi-person-fill fs-4"></i><span
+                class="d-flex justify-content-center align-items-center">{{#if
+                isBoys}}Yigitlar{{else}}Qizlar{{/if}}</span></h5>
+            <h5 class="card-title fs-5 d-flex column-gap-3"><i class="bi bi-wifi fs-4"></i><span
+                class="d-flex justify-content-center align-items-center">{{#if isWifi}}Bor{{else}}Yo'q{{/if}}</span>
+            </h5>
+          </div>
+          <div class="container mx-auto d-flex flex-column gap-1 row mt-1">
+            <a href="tel:{{sellerPhoneNumber}}" class="btn btn-primary">Connect</a>
+            <a href="http://127.0.0.1:8080/info-home/{{_id}}" class="btn btn-danger">Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid p-0 d-flex justify-content-center align-items-center">
+  <h1 class="text-white" style="text-align: center;">All Homes</h1>
+</div>
 <div class="container homes-container">
   <div class="row row-gap-4">
     {{#each homes}}

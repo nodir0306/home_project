@@ -16,6 +16,55 @@ class HomeController{
         this.#_homeModel = Home,
         this.#_userModel = User
     }
+
+    topSellingHome = async (req, res, next) => {
+        try {
+          const { homeId } = req.params;
+      
+     
+          this.#_checkValidObjectId(homeId);
+      
+ 
+          const foundedHome = await this.#_homeModel.findOne({ _id: homeId });
+          if (!foundedHome) {
+            throw new NotFoundErr("Home not found");
+          }
+      
+
+          await this.#_homeModel.updateOne({ _id: homeId }, { $set: { topSellingHome: true } });
+      
+
+          res.status(200).send({ message: "Home marked as top-selling", homeId });
+        } catch (error) {
+          next(error);
+        }
+      };
+      
+
+
+    UnTopSellingHome = async(req,res,next)=>{
+        try {
+            const { homeId } = req.params;
+        
+       
+            this.#_checkValidObjectId(homeId);
+        
+   
+            const foundedHome = await this.#_homeModel.findOne({ _id: homeId });
+            if (!foundedHome) {
+              throw new NotFoundErr("Home not found");
+            }
+        
+  
+            await this.#_homeModel.updateOne({ _id: homeId }, { $set: { topSellingHome: false } });
+        
+  
+            res.status(200).send({ message: "Home unmarked as top-selling", homeId });
+          } catch (error) {
+            next(error);
+          }
+    }
+
     getAllHomes = async(req,res,next)=>{
         try {
             
@@ -28,8 +77,9 @@ class HomeController{
                 .getQuery()
                 .countDocuments();
         
+                const topSellingHomes = await this.#_homeModel.find({topSellingHome: true})
                 const allFilteredHomes = await new getItemFilter(
-                    this.#_homeModel.find(),
+                    this.#_homeModel.find({topSellingHome: false}),
                     query
                   )
                     .filter()
@@ -43,6 +93,7 @@ class HomeController{
                     limit: req.query?.limit || 10,
                     results: allHomes,
                     homes: allFilteredHomes,
+                    topSellingHomes: topSellingHomes,
                   });
                 } catch (error) {
                   next(error);

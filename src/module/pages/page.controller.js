@@ -64,6 +64,14 @@ class pageController {
         res.render("owner-users.hbs",{users: data, layout: 'owner-page.hbs'})
     }
 
+    toUserHomes  = async(req,res)=>{
+        const {userId} = req.params
+        const response = await fetch(`http://127.0.0.1:8080/api/v1/users/${userId}`);
+        const data = await response.json();
+        const homes = data.data.homes
+        res.render("owner-view-user-homes.hbs",{homes: homes, layout: 'owner-page.hbs'})
+    }
+
     
 }
 

@@ -34,5 +34,6 @@ pageRoutes
     CheckAuthGuard(true),
     CheckRolesGuard("owner"),
     pageController.ownerEditUser
-  );
+  )
+  .get("/user-homes/:userId", CheckAuthGuard(true),CheckRolesGuard("owner"), pageController.toUserHomes)
 export default pageRoutes;

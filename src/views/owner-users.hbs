@@ -15,8 +15,8 @@
                 <th scope="col">Last Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>
-                <th scope="col">Banned</th>
-                <th scope="col">Ban User</th>
+                <th scope="col">Homes</th>
+                <th scope="col">Ban</th>
                 <th scope="col">Delete</th>
             </tr>
         </thead>
@@ -28,8 +28,9 @@
                 <td>{{this.surname}}</td>
                 <td>{{this.email}}</td>
                 <td>{{this.phone}}</td>
-                <td>{{#if this.isbanned}}Yes{{else}}No{{/if}}</td>
-                <td><button class="btn btn-warning" onclick="banUserFunc('{{this._id}}')">Ban</button></td>
+                <td><button class="btn btn-info" onclick="getuserAllHomesFunc('{{this._id}}')">Homes</button></td>
+                <td><button class="btn btn-warning" onclick="banUserFunc('{{this._id}}')">{{#if
+                        this.isbanned}}Unban{{else}}Ban{{/if}}</button></td>
                 <td><button class="btn btn-danger" onclick="deleteUserFunc('{{this._id}}')">Delete</button></td>
             </tr>
             {{/each}}
@@ -38,89 +39,107 @@
 </div>
 
 <script>
-const deleteUserFunc = async (id) => {
-    Swal.fire({ 
-        title: "Are you sure?",
-        text: "You won't be able to revert this!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!"
-    }).then(async (result) => {
-        if (result.isConfirmed) {
-            try {
-                const response = await fetch(`http://127.0.0.1:8080/api/v1/users/delete/${id}`, {
-                    method: 'DELETE'
-                });
 
-                if (response.ok) {
-                    Swal.fire({
-                        title: "Deleted!",
-                        text: "The user has been deleted.",
-                        icon: "success"
-                    }).then(() => {
-                        window.location.reload();
+    const getuserAllHomesFunc = async(id) => {
+            const response = await fetch(`http://127.0.0.1:8080/user-homes/${id}`)
+
+            if(response.ok){
+                window.location.href = `http://127.0.0.1:8080/user-homes/${id}`
+            } else{
+                Swal.fire({
+                        icon: "error",
+                        title: "Error",
+                        text: "Inernal server error"
                     });
-                } else {
+            }
+    }
+
+
+    const deleteUserFunc = async (id) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                try {
+                    const response = await fetch(`http://127.0.0.1:8080/api/v1/users/delete/${id}`, {
+                        method: 'DELETE'
+                    });
+
+                    if (response.ok) {
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "The user has been deleted.",
+                            icon: "success"
+                        }).then(() => {
+                            window.location.reload();
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Something went wrong!"
+                        });
+                    }
+                } catch (error) {
                     Swal.fire({
                         icon: "error",
-                        title: "Oops...",
-                        text: "Something went wrong!"
+                        title: "Error",
+                        text: "Unable to delete the user. Please try again later."
                     });
                 }
-            } catch (error) {
-                Swal.fire({
-                    icon: "error",
-                    title: "Error",
-                    text: "Unable to delete the user. Please try again later."
-                });
             }
-        }
-    });
-};
+        });
+    };
 
-const banUserFunc = (id) =>{
-    Swal.fire({ 
-        title: "Are you sure?",
-        text: "You won't be able to revert this!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, block it!"
-    }).then(async (result) => {
-        if (result.isConfirmed) {
-            try {
-                const response = await fetch(`http://127.0.0.1:8080/api/v1/users/ban/${id}`, {
-                    method: 'POST'
-                });
-
-                if (response.ok) {
-                    Swal.fire({
-                        title: "Banned!",
-                        text: "The user has been banned.",
-                        icon: "success"
-                    }).then(() => {
-                        window.location.reload();
+    const banUserFunc = (id) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, block it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                try {
+                    const response = await fetch(`http://127.0.0.1:8080/api/v1/users/ban/${id}`, {
+                        method: 'POST'
                     });
-                } else {
+
+                    if (response.ok) {
+                        Swal.fire({
+                            title: "Banned!",
+                            text: "The user has been banned.",
+                            icon: "success"
+                        }).then(() => {
+                            window.location.reload();
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Something went wrong!"
+                        });
+                    }
+                } catch (error) {
                     Swal.fire({
                         icon: "error",
-                        title: "Oops...",
-                        text: "Something went wrong!"
+                        title: "Error",
+                        text: "Unable to delete the user. Please try again later."
                     });
                 }
-            } catch (error) {
-                Swal.fire({
-                    icon: "error",
-                    title: "Error",
-                    text: "Unable to delete the user. Please try again later."
-                });
             }
-        }
-    });
-};
+        });
+    };
+
+
 
 
 </script>
