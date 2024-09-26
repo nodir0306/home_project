@@ -62,7 +62,50 @@ class LikeController{
         }
     }
     
+    unlike = async (req, res, next) => {
+        try {
+            const { userId, homeId } = req.body;
+    
+            this.#_checkValidObjectId(userId);
+            this.#_checkValidObjectId(homeId);
+    
+            const foundedUser = await this.#_userModel.findById(userId);
+            if (!foundedUser) {
+                throw new NotFoundErr("User not found");
+            }
+            const foundedHome = await this.#_homeModel.findById(homeId);
+            if (!foundedHome) {
+                throw new NotFoundErr("Home not found");
+            }
+    
+            const foundLike = await this.#_likeModel.findOne({ userId, homeId });
+            if (!foundLike) {
+                return res.status(404).send({
+                    message: "Like not found"
+                });
+            }
+    
 
+            await this.#_likeModel.findByIdAndDelete(foundLike._id);
+    
+   
+            await this.#_userModel.findByIdAndUpdate(userId, {
+                $pull: { likes: foundLike._id }
+            });
+            await this.#_homeModel.findByIdAndUpdate(homeId, {
+                $pull: { likes: foundLike._id }
+            });
+    
+            res.status(200).send({
+                message: "ok",
+                type: "unliked"
+            });
+    
+        } catch (error) {
+            next(error);
+        }
+    };
+    
 
 
 
