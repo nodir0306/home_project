@@ -153,6 +153,29 @@ class UserController {
   };
 
 
+
+  unBanUser = async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      this.#_isValidObjectId(id)
+      const foundedUser = await this.#_user_model.findById(id)
+      if(!foundedUser){
+        throw new NotFoundErr("User not fount")
+      }
+      await this.#_user_model.findByIdAndUpdate(id, {
+        $set: {
+          isbanned: false
+        },
+      });
+      res.status(200).send({
+        message: "Unbanned",
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+
   #_isValidObjectId = (id)=>{
     if(!isValidObjectId(id)){
       throw new BadRequestsErr("This is object id not supported")

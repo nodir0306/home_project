@@ -84,8 +84,8 @@
       <div class="card">
 
         <div id="carousel{{@index}}" class="carousel slide" style="position: relative;">
-          <i class="bi bi-heart" data-like="{{_id}}"></i>
-          <i class="bi bi-heart-fill"></i>
+          <i class="bi bi-heart" data-like="{{_id}}" data-userId="{{userId}}"></i>
+          <i class="bi bi-heart-fill" data-like="{{_id}}" data-userId="{{userId}}"></i>
           <div class="carousel-inner">
             {{#if homeImage.length}}
             {{#each homeImage}}
@@ -173,9 +173,9 @@
       <div class="card">
 
         <div id="carousel{{@index}}" class="carousel slide" style="position: relative;">
-          <i class="bi bi-heart" data-like="{{_id}}"></i>
-          <i class="bi bi-heart-fill"></i>
-          <div class="carousel-inner">
+          <i class="bi bi-heart" data-like="{{_id}}" data-userId="{{userId}}"></i>
+          <i class="bi bi-heart-fill " data-like="{{_id}}" data-userId="{{userId}}"></i>
+          <div class="carousel-inner" >
             {{#if homeImage.length}}
             {{#each homeImage}}
             <div class="carousel-item {{#if @first}}active{{/if}}">
@@ -227,76 +227,93 @@
     {{/each}}
   </div>
 </div>
-<script>
-  const hearts = document.querySelectorAll(".bi-heart");
-  const filledHearts = document.querySelectorAll(".bi-heart-fill");
 
+<div class="container d-flex justify-content-center align-items-center mx-auto">
+  <nav aria-label="Pagination Navigation">
+    <ul class="pagination pagination-sm">
+      {{#each (range 1 pageCount)}}
+      <li class="page-item{{#if (eq ../currentPage @this)}} active{{/if}}">
+        <a class="page-link" href="?limit=10&page={{@this}}">{{@this}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </nav>
+</div>
+
+
+
+<script>
+ const hearts = document.querySelectorAll(".bi-heart");
+const filledHearts = document.querySelectorAll(".bi-heart-fill");
+
+const likeFunc = async () => {
+  const response = await fetch("http://127.0.0.1:8080/api/v1/users/");
+  const data = await response.json();
+  const likedHomes = data.data[0].likes;
 
   hearts.forEach((heart, index) => {
     const filledHeart = filledHearts[index];
-     const homeId = heart.getAttribute('data-like');
-    if (localStorage.getItem("jwtToken")) {
-      heart.addEventListener("click", async() => {
-      
-        console.log(homeId)
-        const response = fetch("http://127.0.0.1:8080/api/v1/like",{
-          method: "POST",
-          headers: {
-            "Content Type": "application/json"
-          },
-          body: {
-            homeId: JSON.stringify({homeId})
-          }
-        })
-        heart.style.zIndex = "0";
-        filledHeart.style.zIndex = "10000";
+    const homeId = heart.getAttribute('data-like');
+
+    filledHeart.style.zIndex = likedHomes.includes(homeId) ? '10000' : '0';
+  });
+};
+
+likeFunc();
+
+hearts.forEach((heart, index) => {
+  const filledHeart = filledHearts[index];
+  const homeId = heart.getAttribute('data-like');
+  const userId = localStorage.getItem("userId");
+
+  if (localStorage.getItem("jwtToken")) {
+    heart.addEventListener("click", async () => {
+      if (!userId || !homeId) {
+        console.error("userId or homeId is undefined.");
+        return; 
+      }
+
+      heart.style.zIndex = "0";
+      filledHeart.style.zIndex = "10000"; 
+
+      const response = await fetch("http://127.0.0.1:8080/api/v1/like", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ userId, homeId })
+      });
+
+    
+      if (!response.ok) {
+        heart.style.zIndex = "10000";
+        filledHeart.style.zIndex = "0";
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Failed to add to favorites",
+        });
+      } else {
         Swal.fire({
           text: 'Added to favorites',
           showConfirmButton: false,
-          timer: 1500,
+          timer: 3000,
           customClass: {
             popup: 'like',
           }
         });
+      }
+    });
+  } else {
+    heart.addEventListener("click", () => {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "You are not registered",
       });
-
-      filledHeart.addEventListener("click", () => {
-        heart.style.zIndex = "10000";
-        filledHeart.style.zIndex = "0";
-        Swal.fire({
-          text: 'Removed to favorites',
-          showConfirmButton: false,
-          timer: 1500,
-          customClass: {
-            popup: 'unlike',
-          }
-        });
-
-      });
-
-    } else if (!localStorage.getItem("jwtToken")) {
-      heart.addEventListener("click", () => {
-        heart.style.zIndex = "10000";
-        hearts.style.zIndex = "0";
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Something went wrong! Your not registired",
-        });
-      });
+    });
+  }
+});
 
 
-      heart.addEventListener("click", () => {
-        heart.style.zIndex = "10000";
-        filledHeart.style.zIndex = "0";
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Your not registired",
-        });
-
-      });
-    }
-
-  });
 </script>

@@ -8,26 +8,28 @@ import { DB } from "./mongo/mongo.js";
 import router from "./routes/index.routes.js";
 import Handlebars from "handlebars";
 import cookieParser from "cookie-parser";
-import {ErrorHandlerMiddleware} from "./middleware/error.handler.middleware.js"
+import { ErrorHandlerMiddleware } from "./middleware/error.handler.middleware.js";
 import { allowInsecurePrototypeAccess } from "@handlebars/allow-prototype-access";
 import pageRoutes from "./module/pages/all-pages.routes.js";
+
 const app = express();
-
-
 
 // Set up view engine
 app.set("views", path.join(process.cwd(), "src", "views"));
 
-
-// use cookie
+// Use cookie
 app.use(cookieParser());
-// Setup express-handlebars
+
+// Setup express-handlebars with helper
 const hbs = create({
     extname: ".hbs",
     defaultLayout: "main",
-    handlebars: allowInsecurePrototypeAccess(Handlebars)
+    handlebars: allowInsecurePrototypeAccess(Handlebars),
+    helpers: {
+        range: (start, end) => Array.from({ length: end - start + 1 }, (_, i) => i + start),
+        eq: (a, b) => a === b,
+    },
 });
-
 
 app.engine(".hbs", hbs.engine);
 app.set("view engine", ".hbs");
@@ -40,17 +42,15 @@ app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
 app.use(express.urlencoded({ extended: true }));
-// app.use(PageMiddleWare)
+
 // Database connection
 DB()
     .then(() => console.log("Database connected successfully"))
     .catch((error) => console.log(`Database error: ${error}`));
 
 // Routes
-app.use("/api/v1",router);
-app.use("/",pageRoutes)
-
-
+app.use("/api/v1", router);
+app.use("/", pageRoutes);
 
 app.all("*", (req, res) => {
     res.status(404).send({
@@ -58,8 +58,7 @@ app.all("*", (req, res) => {
     });
 });
 
-app.use(ErrorHandlerMiddleware)
-
+app.use(ErrorHandlerMiddleware);
 
 // Start server
 app.listen(appConfig.port, () => {

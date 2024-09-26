@@ -4,6 +4,9 @@ class pageController {
     toHomes = async(req,res)=>{
         const response = await fetch(`http://127.0.0.1:8080/api/v1/homes`);
         const data = await response.json();
+        const pageCount = Math.ceil((data.homes.length)/10)
+        data.pageCount = pageCount
+        console.log(data)
         res.render("index.hbs",data)
     }
 

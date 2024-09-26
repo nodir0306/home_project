@@ -6,7 +6,7 @@ import { Schema, model } from "mongoose";
             ref: "User",
             required: true
         },
-        home_id: {
+        homeId: {
             type: Schema.Types.ObjectId,
             ref: "Home",
             required: true

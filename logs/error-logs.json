@@ -1410,3 +1410,35 @@
     "level": "error",
     "message": "Exception (Conflict Exception): message: User don't have access to url: /UnTopSelling/66f0046a27ade6047356bd54 with method: GET, status: 409; Time: Sun Sep 22 2024 17:18:52 GMT+0500 (Узбекистан, стандартное время)"
 }
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: Token not found in cookies, status: 400; Time: Wed Sep 25 2024 17:05:54 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Not Found): message: user not found, status: 404; Time: Wed Sep 25 2024 18:01:44 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {undefined} id you provided is wrong, status: 400; Time: Wed Sep 25 2024 18:23:46 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {undefined} id you provided is wrong, status: 400; Time: Wed Sep 25 2024 18:24:34 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {null} id you provided is wrong, status: 400; Time: Wed Sep 25 2024 18:27:08 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {null} not working, status: 400; Time: Wed Sep 25 2024 18:29:43 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {null} not working, status: 400; Time: Wed Sep 25 2024 18:30:01 GMT+0500 (Узбекистан, стандартное время)"
+}
+{
+    "level": "error",
+    "message": "Exception (Bad requests): message: The {null} not working, status: 400; Time: Wed Sep 25 2024 18:30:02 GMT+0500 (Узбекистан, стандартное время)"
+}
